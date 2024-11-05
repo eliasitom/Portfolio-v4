@@ -1,0 +1,19 @@
+.section-separator {
+    width: 80%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.section-separator h2 {
+    height: 40px;
+    color: var(--var-color4);
+    margin: 0 10px 0 10px;
+}
+.section-separator-line {
+    height: 3px;
+    width: 30%;
+    background-color: var(--var-color4);
+}

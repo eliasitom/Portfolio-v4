@@ -1,0 +1,22 @@
+:root {
+  --var-color0: #FFF4B7;
+  --var-color1: #006A67;
+  --var-color2: #003161;
+  --var-color3: #000B58;
+  --var-color4: #cf8561;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+
+  color: var(--var-color3);
+  font-family: "Poppins", sans-serif;
+
+}
+
+
+#root {
+  width: 100%;
+  height: 100%;
+}

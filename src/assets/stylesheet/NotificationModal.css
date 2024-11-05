@@ -1,0 +1,43 @@
+.notification-modal {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--var-color3);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    animation: fadeInOut 3s ease;
+    opacity: 0.9;
+    z-index: 1000;
+}
+
+/* Estilo para el ícono */
+.copy-icon {
+    color: var(--var-color0);
+    transition: color 0.3s;
+    font-size: 32px !important;
+    margin: 0 5px 0 5px;
+    padding: 0;
+}
+
+.copy-icon:hover {
+    color: #555;
+}
+
+/* Animación de entrada y salida */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    10%, 90% {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
