@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import "../stylesheet/ImageSlider.css";
 import { FaCircle } from "react-icons/fa6";
 
-import video0 from '../Videos0/Portfolio_Animations.mp4';
+import video0 from '../Videos0/Portfolio_Animations0.mp4';
+import video1 from '../Videos0/Portfolio_Animations1.mp4';
 
 
-const videos = [video0];
+const videos = [video0, video1, video0, video1, video1];
 
 function VideoSlider() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -36,7 +37,7 @@ function VideoSlider() {
         <div className='image-slider'>
             <div className="image-slider-container">
                 {/* Imagen previa */}
-                <video className="prev-image" autoPlay loop muted playsInline onClick={goToPrev}>
+                <video className="prev-image" key={prevIndex} autoPlay loop muted playsInline onClick={goToPrev}>
                     <source src={videos[prevIndex]} type="video/mp4" />
                     Tu navegador no soporta el video.
                 </video>
@@ -44,6 +45,7 @@ function VideoSlider() {
                 {/* Imagen actual */}
                 <video 
                 className={`current-image ${isShaking ? 'shake' : ''}`}
+                key={currentIndex}
                  autoPlay loop muted playsInline 
                  onClick={goToPrev}
                  >
@@ -52,7 +54,7 @@ function VideoSlider() {
                 </video>
 
                 {/* Imagen siguiente */}
-                <video className="next-image" autoPlay loop muted playsInline onClick={goToNext}>
+                <video className="next-image" key={nextIndex} autoPlay loop muted playsInline onClick={goToNext}>
                     <source src={videos[nextIndex]} type="video/mp4" />
                     Tu navegador no soporta el video.
                 </video>
