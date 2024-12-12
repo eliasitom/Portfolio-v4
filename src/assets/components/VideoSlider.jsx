@@ -4,9 +4,9 @@ import { FaCircle } from "react-icons/fa6";
 
 import video0 from '../Videos0/Portfolio_Animations0.mp4';
 import video1 from '../Videos0/Portfolio_Animations1.mp4';
+import video2 from "../Videos0/Portfolio_Animations.mp4"
 
-
-const videos = [video0, video1, video0, video1, video1];
+const videos = [video0, video1, video2, video1, video2];
 
 function VideoSlider() {
     const [currentIndex, setCurrentIndex] = useState(0);

@@ -7,8 +7,9 @@ import image1 from '../Images0/Portfolio_Illustrations0002.png';
 import image2 from '../Images0/Portfolio_Illustrations0003.png';
 import image3 from '../Images0/Portfolio_Illustrations0004.png';
 import image4 from '../Images0/Portfolio_Illustrations0005.png';
+import image5 from '../Images0/Portfolio_Illustrations0006.png';
 
-const images = [image0, image1, image2, image3, image4];
+const images = [image0, image1, image2, image3, image4, image5];
 
 function ImageSlider() {
     const [currentIndex, setCurrentIndex] = useState(0);
